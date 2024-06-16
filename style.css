@@ -2,111 +2,236 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-    position: relative;
-}
-
-header h1 {
-    font-size: 3rem;
-    margin: 0;
-    font-family: 'Helvetica Neue', sans-serif;
-}
-
-header p {
-    font-size: 1.2rem;
-    font-weight: lighter;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ff6e7f;
-}
-
-.section {
-    background: white;
-    padding: 4rem 2rem;
-    margin: 2rem 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 2rem;
-    color: #ff6e7f;
-    border-bottom: 2px solid #ff6e7f;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    font-family: 'Helvetica Neue', sans-serif;
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    font-family: 'Helvetica Neue', sans-serif;
-}
-
-ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-footer {
-    background: #333;
-    color: white;
+    background-color: #1f1f1f;
     padding: 1rem 0;
-    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-footer p {
-    margin: 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 2rem;
 }
 
-a {
-    color: inherit;
+header .logo a {
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: inherit; /* Inherit color from the anchor tag */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#contact-header {
+    padding: 4rem 2rem; /* Adjusted padding to separate from the details section */
+    background-color: #1f1f1f;
+    text-align: center;
+    font-size: 3rem;
+    color: #dcbf9a;
+}
+
+#contact-details {
+    padding: 4rem 2rem; /* Adjusted padding to match the design */
+    background-color: #121212; /* Ensure background color matches the page background */
+    color: #e0e0e0;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+#contact-details p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+#contact-details p a {
+    color: #dcbf9a; /* Changed to beige color */
     text-decoration: none;
 }
 
-.contact-info, .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+#contact-details p a:hover {
+    text-decoration: underline;
 }
 
-.social-links a {
-    color: white;
-    font-size: 1.5rem;
+#contact-details p:first-of-type {
+    font-size: 2rem; /* Change this value to adjust the size */
+    font-weight: bold;
 }
+
+footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+header nav ul li a:hover {
+    color: #dcbf9a; /* Changed to beige color */
+}
+
+header nav ul li a.highlighted {
+    background-color: #dcbf9a; /* Changed to beige color */
+    color: #1f1f1f;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+#hero {
+    background: #121212;
+    padding: 8rem 2rem 2rem 2rem; /* Adjusted padding */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero-text {
+    max-width: 50%;
+    margin-left: 12rem; /* Adjust this value to change the left margin */
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #dcbf9a; /* Changed to beige color */
+}
+
+.hero-text h1 span {
+    font-size: 1.5rem; /* Made smaller */
+    color: #fff; /* Changed to white */
+}
+
+.hero-text p {
+    font-size: 1rem; /* Made smaller */
+    color: #fff; /* Changed to white */
+}
+
+.cta-buttons {
+    margin-top: 1.5rem;
+}
+
+.cta-buttons .btn {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+    background-color: #dcbf9a; /* Changed to beige color */
+    color: #1f1f1f;
+}
+
+.btn-primary:hover {
+    background-color: #e0e0e0;
+    color: #1f1f1f;
+}
+
+.btn-secondary {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border: 2px solid #dcbf9a; /* Changed to beige color */
+}
+
+.btn-secondary:hover {
+    background-color: #dcbf9a; /* Changed to beige color */
+    color: #1f1f1f;
+    border-color: #dcbf9a; /* Changed to beige color */
+}
+
+.hero-image {
+    flex-shrink: 0;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.hero-image img {
+    max-width: 700px; /* Increased size */
+    height: auto;
+    border-radius: 40px;
+    margin-right: 175px;
+}
+
+#contact {
+    padding: 4rem 2rem;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #dcbf9a; /* Changed to beige color */
+}
+
+#contact p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+#contact p a {
+    color: #dcbf9a; /* Changed to beige color */
+    text-decoration: none;
+}
+
+#contact p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+
