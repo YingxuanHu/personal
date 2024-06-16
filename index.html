@@ -4,200 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yingxuan Hu Portfolio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-            position: relative;
-        }
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            padding: 0.5rem 0;
-        }
-        nav a {
-            color: white;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .section {
-            margin-bottom: 4rem;
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            font-size: 2rem;
-            color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: white;
-            position: relative;
-        }
-        .contact-info {
-            margin-top: 1rem;
-        }
-        .contact-info p {
-            margin: 0.5rem 0;
-        }
-        .social-links a {
-            margin: 0 0.5rem;
-            color: white;
-            font-size: 1.5rem;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Yingxuan (Alvin) Hu</h1>
-        <p>Computer Science and Business Administration Student</p>
-        <div class="contact-info">
-            <p>Contact: 647-877-1288 | Email: <a href="mailto:huxx3260@mylaurier.ca" style="color: white;">huxx3260@mylaurier.ca</a></p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/yingxuan-hu" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>Yingxuan H.</h1></a>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#photography">Photography</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Work Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <div id="about" class="section">
-            <h2>About Me</h2>
-            <p>I am Yingxuan (Alvin) Hu, a dedicated and passionate student pursuing a double degree in Computer Science and Business Administration at the University of Waterloo and Wilfrid Laurier University. With a strong foundation in both technical and business domains, I strive to bridge the gap between technology and business strategies to drive innovative solutions. In my spare time, I enjoy coding, reading tech blogs, and exploring new technologies.</p>
+    <section id="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>I'm Yingxuan(Alvin) Hu.<br><span>A Computer Science and Business Administration Student</span></h1>
+                <p>I'm passionate about technology and business. If you have a great project that needs some amazing skills, I'm your person.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Resume</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Protrait.JPG" alt="Yingxuan Hu">
+            </div>
         </div>
-        <div id="education" class="section">
-            <h2>Education</h2>
-            <h3>University of Waterloo - David R. Cheriton School of Computer Science</h3>
-            <p>Bachelor of Computer Science (CO-OP, double degree program), Aug 2020–Aug 2025</p>
-            <p>Relevant coursework: Algorithms, Object-Oriented Programming, OS, App Development, Linux, Optimization etc.</p>
-            <h3>Wilfrid Laurier University - Lazaridis School of Business and Economics</h3>
-            <p>Bachelor of Business Administration (CO-OP, double degree program), Aug 2020–Aug 2025</p>
-            <p>Relevant coursework: Macro and Microeconomics, Investment Management, Business Strategy etc.</p>
-        </div>
-        <div id="experience" class="section">
-            <h2>Work Experience</h2>
-            <h3>ICON Office Environment, Brantford, ON</h3>
-            <p>Data/Product Analyst, Sept 2023–Dec 2023</p>
-            <ul>
-                <li>Developed a data analysis program using Python, with libraries such as Pandas, Numpy and Matplotlib.</li>
-                <li>Provided insightful past sales data analysis and visual graph representations for each product.</li>
-                <li>Programmed reusable tools for future sales projections using company-specific algorithms.</li>
-                <li>Set up government supply arrangement for the company, achieving ISO9001/14001 certification.</li>
-                <li>Composed new business plan and standard operating procedures, demonstrated management skills.</li>
-            </ul>
-            <h3>OMERS, Toronto, ON</h3>
-            <p>ServiceNow Developer, Jan 2023–Apr 2023</p>
-            <ul>
-                <li>Resolved multiple enterprise-level issues using Java and JavaScript, enhancing system performance and UI.</li>
-                <li>Developed and maintained ServiceNow elements like workflows, business rules, UI policies, and client scripts.</li>
-                <li>Performed developing, testing, and publishing of ServiceNow applications, familiarized with SDLC.</li>
-            </ul>
-            <h3>CHANGTONG Communication Data Co., Shenyang, China</h3>
-            <p>Front End Developer, Jul 2021–Sep 2021</p>
-            <ul>
-                <li>Successfully delivered a municipal COVID-testing system interface platform project with JavaScript/HTML/CSS.</li>
-                <li>Updated and maintained 10+ website interfaces to align with current marketing standards and user expectations.</li>
-                <li>Participated in team code reviews and debugging to provide constructive feedback to team members.</li>
-            </ul>
-        </div>
-        <div id="projects" class="section">
-            <h2>Projects</h2>
-            <h3>Application Development</h3>
-            <p>Team member, Jan 2024–Apr 2024</p>
-            <ul>
-                <li>Developed an Android application with a team using Kotlin JetPack and Git workflows; the app is a dating platform for Waterloo students.</li>
-                <li>Created multiple user interfaces and integrated them with the backend to enhance user experience.</li>
-                <li>Used Google Firebase to store user data and matched users with others’ profiles based on their preferences using our efficient algorithm.</li>
-            </ul>
-            <h3>IBM Machine Learning Professional Certificate</h3>
-            <p>Student, Sept 2023–Dec 2023</p>
-            <ul>
-                <li>Completed IBM’s ML course covering ML fundamentals. Including regression, decision trees, and neural networks.</li>
-                <li>Gained proficiency in Jupyter, using libraries like Pandas and Scikit-learn for data analysis and model building.</li>
-                <li>Applied ML to real-world scenarios, involving data processing, model training, and analysis.</li>
-            </ul>
-            <h3>Compiler Development for WLP4 (Simplified C++)</h3>
-            <p>Team member, Apr 2023–Aug 2023</p>
-            <ul>
-                <li>Built a compiler for WLP4, encompassing lexical analysis, syntax parsing, and semantic validation with DFA and custom parsing algorithms.</li>
-                <li>Implemented functions like code generation, linking, and loading, converts WLP4 to Assembly language (MIPS).</li>
-            </ul>
-            <h3>Monopoly Coding Project</h3>
-            <p>Team member, Dec 2022–Apr 2023</p>
-            <ul>
-                <li>Created a monopoly game with C++ in a team of two, efficiently using the features in OOP.</li>
-                <li>Implemented polymorphism by defining a method in a base class like “Location”, that its subclasses such as “Jail”, “Property”, “Chance” etc. will handle different actions.</li>
-                <li>Utilized Encapsulation feature to declare critical game data as private within their respective classes, manipulating these data only through public methods like “payRent” to ensure changes follow the game rules.</li>
-            </ul>
-        </div>
-        <div id="portfolio" class="section">
-            <h2>Portfolio Construction Project</h2>
-            <h3>BU473 Assignment 3 Report</h3>
-            <p>The North American Gen-Z Degenerate Gamblers Fund’s primary objective is to capitalize on the quick rebound potential of stocks following significant price drops, aiming for robust short-term gains. The fund is designed to harness the volatility within stocks that are popular among the Gen-Z demographic in North America.</p>
-            <p>Key elements include:</p>
-            <ul>
-                <li>Focus on sectors: Sustainable & EV, Tech & AI, Social Media, Entertainment & Streaming, Retail & Lifestyle, Food & Beverage, Tobacco & Cannabis, Real Estate.</li>
-                <li>Investment strategy: Long-only positions with limit sell orders and stop-loss orders to manage potential losses.</li>
-                <li>Adjustments to weighting strategies to emphasize ESG factors and Gen-Z scores, prioritizing technology stocks.</li>
-                <li>Evaluations and modifications based on performance and alignment with ethical investment principles.</li>
-            </ul>
-            <p>Detailed performance measures and modifications are outlined in the full report. GitHub repositories for projects will be added soon.</p>
-        </div>
-        <div id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me via email or phone:</p>
-            <p>Email: <a href="mailto:huxx3260@mylaurier.ca">huxx3260@mylaurier.ca</a></p>
-            <p>Phone: 647-877-1288</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yingxuan-hu">https://www.linkedin.com/in/yingxuan-hu</a></p>
-        </div>
-    </div>
+    </section>
     <footer>
-        <p>&copy; 2024 Yingxuan (Alvin) Hu. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Yingxuan Hu. All rights reserved.</p>
+        </div>
     </footer>
-    <!-- Font Awesome for social media icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
