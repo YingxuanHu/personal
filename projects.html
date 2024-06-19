@@ -10,7 +10,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html"><h1>Yingxuan Hu</h1></a>
+                <a href="index.html"><h1>Yingxuan H.</h1></a>
             </div>
             <nav>
                 <ul>
@@ -22,11 +22,139 @@
             </nav>
         </div>
     </header>
-    <section id="projects">
+    <section id="projects-header">
         <div class="container">
             <h2>Projects</h2>
-            <p>Welcome to the projects section. Here you can find the details of my projects.</p>
-            <!-- Add your project details here -->
+        </div>
+    </section>
+    <section id="projects-details">
+        <div class="container">
+            <div id="table-of-contents">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#project1">Android App with Kotlin: Campus Dating</a></li>
+                    <li><a href="#project2">Waterloo Special Monopoly: "Watopoly"</a></li>
+                    <li><a href="#project3">Company ROI/Sales Projection</a></li>
+                    <li><a href="#project4">Fund Management Project</a></li>
+                </ul>
+            </div>
+            <br>
+
+            <div class="project" id="project1">
+                <h3 class="highlight">Android App with Kotlin: Campus Dating</h3>
+                <p><a href="https://github.com/YingxuanHu/uWRIZZ" target="_blank" class="github-link">Github Repo</a></p>
+                <h4>I collaborated with a team to develop an Android dating application for Waterloo students using Kotlin JetPack and Git workflows.<br><br>
+                    This project is developed to help UW specific students to meet/date with people based on their preferences.<br><br>
+                    My contributions included designing and integrating multiple user interfaces to enhance the overall user experience.
+                    Additionally, we utilized Google Firebase to store user data and implemented an efficient algorithm to match users based on their preferences.
+                </h4>
+                <h5 class="walkthrough-title">Walkthrough:</h5>
+                <div class="walkthrough">
+                    <div class="step">
+                        <p class="step-description">1. Login page, and Account registration</p>
+                        <img src="uwrizz1.png" alt="Login Screen" class="project-image">
+                        <img src="uwrizz2.png" alt="Initial Setup" class="project-image">
+                    </div>
+                    <div class="step">
+                        <p class="step-description">2. After Login, proceed to Profile setting, and Preferences setting</p>
+                        <img src="uwrizz5.png" alt="Profile Setup" class="project-image">
+                        <img src="uwrizz6.png" alt="Preferences" class="project-image">
+                    </div>
+                    <div class="step">
+                        <p class="step-description">3. Now, the user can view others after matching algorithm's filtered result, while other users can see/like "Alvin" profile as well</p>
+                        <img src="uwrizz7.png" alt="Matching Algorithm" class="project-image">
+                        <img src="uwrizz8.png" alt="User Interface" class="project-image">
+                    </div>
+                    <div class="step">
+                        <p class="step-description">4. If two users both liked each other, they will be able to see them in the chat section</p>
+                        <img src="uwrizz9.png" alt="Chat Section" class="project-image">
+                        <img src="uwrizz10.png" alt="Chat Interface" class="project-image">
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="project" id="project2">
+                <h3 class="highlight">Waterloo Special Monopoly: "Watopoly"</h3>
+                <p><a href="https://github.com/YingxuanHu/AlvinWatopoly" target="_blank" class="github-link">Github Repo</a></p>
+                <h4> I was work on the Monopoly Coding Project with another teammate, where we created a simple modified Monopoly game using C++. 
+                    The game is specific to the University of Waterloo Campus, and there are added rules as well, the specification of this project can be found 
+                    <a href="watopoly.pdf" target="_blank">here</a> <br>
+                    <br>
+                    We efficiently utilized Object-Oriented Programming (OOP) features in C++, implementing polymorphism, and also 
+                    employed encapsulation by declaring critical game data as private within their respective classes.
+                    <br>
+                    <br>
+                    The detailed design logic can be found 
+                    <a href="design.pdf" target="_blank">here</a> <br>
+                </h4>
+                <h5 class="walkthrough-title">Walkthrough:</h5>
+                <div class="walkthrough">
+                    <p class="step-description">Command Interpretation:</p>
+                    <ul>
+                        <li><u>roll</u> (used if the player can roll): the player rolls two dice, moves the sum of the two dice and takes action on the square they landed on</li>
+                        <li><u>next</u> (used if the player cannot roll): give control to the next player.</li>
+                        <li><u>trade "name" "give" "receive"</u>: offers a trade to name with the current player offering give and requesting
+                            receive, where give and receive are either amounts of money or a property name. Responses are accept and
+                            reject</li>
+                        <li><u>"property" buy/sell</u>: attempts to buy or sell an improvement for property</li>
+                        <li><u>mortgage "property"</u>: attempts to mortgage property.</li>
+                        <li><u>unmortgage "property"</u>: attempts to unmortgage property.</li>
+                        <li><u>bankrupt</u>: player declares bankruptcy. This command is only available when a player must pay more money than they
+                            currently have</li>
+                        <li><u>assets</u>: displays the assets of the current player. Does not work if the player is deciding how to pay Tuition.</li>
+                        <li><u>all</u>: displays the assets of every player. For verifying the correctness of your transactions. Does not work if a player is
+                            deciding how to pay Tuition</li>
+                    </ul>
+                    <div class="step">
+                        <p class="step-description">1. Game Initialization Setup</p>
+                        <img src="wato1.png" alt="initialization" class="project-image-custom">
+                    </div>                    
+                    <div class="step">
+                        <p class="step-description">2. Game play (1)</p>
+                        <img src="wato2.png" alt="Game Play" class="project-image-custom">
+                    </div>   
+                    <div class="step">
+                        <p class="step-description">3. Game play (2)</p>
+                        <img src="wato3.png" alt="Game Play" class="project-image-custom">
+                    </div>   
+                    <div class="step">
+                        <p class="step-description">4. Game play (3)</p>
+                        <img src="wato4.png" alt="Game Play" class="project-image-custom">
+                    </div>   
+                    <div class="step">
+                        <p class="step-description">5. Game play (4)</p>
+                        <img src="wato5.png" alt="Game Play" class="project-image-custom">
+                    </div>  
+                    <div class="step">
+                        <p class="step-description">6. Game play (5)</p>
+                        <img src="wato6.png" alt="Game Play" class="project-image-custom">
+                    </div>  
+                </div>
+            </div>
+            <br>
+
+            <div class="project" id="project3">
+                <h3 class="highlight">Company ROI/Sales Projection</h3>
+                <h4>Description:</h4>
+                <ul>
+                    <li>Provide a brief description of the project here.</li>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+            </div>
+            <br>
+            <div class="project" id="project4">
+                <h3 class="highlight">Fund Management Project</h3>
+                <h4>Description:</h4>
+                <ul>
+                    <li>Provide a brief description of the project here.</li>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+            </div>
         </div>
     </section>
     <footer>
