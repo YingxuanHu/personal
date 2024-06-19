@@ -285,6 +285,127 @@ header nav ul li a.highlighted {
     font-size: 1.2rem;
 }
 
+/* Header styles */
+#projects-header {
+    padding: 4rem 2rem;
+    background-color: #1f1f1f;
+    text-align: center;
+    font-size: 3rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+/* Project section styles */
+#projects-details {
+    padding: 4rem 2rem;
+    background-color: #121212; /* Ensure background color matches the page background */
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+.project .highlight {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+.project h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0; /* White color */
+}
+
+.project ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    color: #e0e0e0;
+}
+
+.project ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.project-image.large {
+    width: 100%; /* Ensure the image takes up full width */
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensure the image covers the container */
+    border: none;
+    margin: 0 auto;
+}
+
+
+/* Walkthrough section styles */
+.walkthrough-title {
+    font-size: 1.2rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+.walkthrough {
+    margin-top: 1rem;
+}
+
+.walkthrough .step {
+    margin-bottom: 2rem;
+}
+
+.walkthrough .step-description {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0; /* White color */
+}
+
+.walkthrough .project-image {
+    max-width: 45%; /* Adjust the size of the images */
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.project-image-custom-1 {
+    width: 700px;
+    height: 450px;
+}
+
+.project-image-custom-2 {
+    width: 700px;
+    height: 700px;
+}
+
+#table-of-contents {
+    margin-bottom: 2rem;
+    padding: 0rem;
+    border-radius: 0px;
+    border-bottom: 2px solid #dcbf9a; /* Beige color for the bottom border */
+}
+
+#table-of-contents h3 {
+    font-size: 2rem;
+    color: #dcbf9a;
+}
+
+#table-of-contents ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#table-of-contents ul li {
+    margin-bottom: 0.5rem;
+}
+
+#table-of-contents ul li a {
+    color: #dcbf9a; /* Beige color */
+    text-decoration: none;
+}
+
+#table-of-contents ul li a:hover {
+    text-decoration: underline;
+}
+
 /* Footer styles */
 footer {
     background-color: #1f1f1f;
