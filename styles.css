@@ -340,6 +340,16 @@ header nav ul li a.highlighted {
     margin: 0 auto;
 }
 
+/* GitHub link styles */
+.github-link {
+    color: #dcbf9a; /* Beige color to match the theme */
+    text-decoration: none;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
 
 /* Walkthrough section styles */
 .walkthrough-title {
